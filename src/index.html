@@ -7,14 +7,48 @@
     <style>
         @import './styles/index.scss';
     </style>
+    <style>
+        table {
+            border-collapse: collapse;
+            /* z-index: 1;
+            background-color: transparent;
+            top: 50%;
+            bottom: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute; */
+            /* display: block; */
+            /* margin-left: auto;
+            margin-right: auto; */
+        }
+        td {
+            width: 5vh;
+            height: 5vh;
+            border: 0.5vh solid red;
+            background-color: transparent;
+        }
+        
+
+        video {
+            /* position: absolute; */
+            width: 100%;
+            background-color: transparent;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="root"></div>
+        <button id="start-detection-2">Start Detection 2</button>
+    <button id="start-button">Start Video</button>
+    <video id="video" autoplay muted playsinline></video>
+    <canvas id="canvas"/>
 </body>
 
+<script src="https://cdn.roboflow.com/0.2.20/roboflow.js">
+</script>
+
+
 <script type="module">
-    import './app.js';
+    import './app.ts'
 </script>
 
 </html>
